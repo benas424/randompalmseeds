@@ -21,6 +21,7 @@ def find_plants(link):
 def find_all_plants():
     all_plants = []
     for link in gen_all_links():
+        print(f"Processing {link}")
         for plant in find_plants(link):
             all_plants.append(plant)
     return all_plants
